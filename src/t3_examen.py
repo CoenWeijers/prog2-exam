@@ -26,7 +26,8 @@ def faculteit(n):
 
     De faculteit van 1 is 1.
     """
-    return 0
+
+
 
 
 def rijksregisternummer_controlegetal(rrn):
@@ -35,7 +36,10 @@ def rijksregisternummer_controlegetal(rrn):
     Het controlegetal is het getal gevormd door de laatste twee cijfers
     van het rijksregisternummer.
     """
-    return 0
+
+    result = rrn[-2:]
+    x =int(rrn[-2:])
+    return x
 
 
 def rijksregisternummer_geboortejaar(rrn):
@@ -49,7 +53,9 @@ def rijksregisternummer_geboortejaar(rrn):
 
     In bovenstaand voorbeeld is het geboortejaar 42 (1942).
     """
-    return 0
+    result = rrn[:2]
+    x = int(rrn[:2])
+    return x
 
 
 def rijksregisternummer_geboortemaand(rrn):
@@ -62,7 +68,9 @@ def rijksregisternummer_geboortemaand(rrn):
 
     In bovenstaand voorbeeld is het geboortemaand 1 (januari).
     """
-    return 0
+    result = rrn[3:5]
+    x = int(rrn[3:5])
+    return x
 
 
 def rijksregisternummer_geboortedag(rrn):
@@ -75,7 +83,9 @@ def rijksregisternummer_geboortedag(rrn):
 
     In bovenstaand voorbeeld is het geboortedag 22.
     """
-    return 0
+    result = rrn[4:7]
+    x = int(rrn[4:7])
+    return x
 
 
 def rijksregisternummer_is_vrouw(rrn):
@@ -132,6 +142,9 @@ def is_geldig_rijksregisternummer(rrn):
 
 
 def volume_kegel(r, h):
+
+
+
     """Return volume kegel met straal r en hoogte h
 
     Het volume van een kegel met straal r en hoogte h
@@ -139,7 +152,9 @@ def volume_kegel(r, h):
     V = 1/3 * π * r^2 * h
     """
 
-    return 0
+    π = 3.14
+    v = 1/3 * π * r**2 * h
+    return v
 
 
 def benader_pi(n):
